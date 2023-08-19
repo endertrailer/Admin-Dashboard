@@ -18,7 +18,7 @@ body {
   }
   
   .container {
-    height: 100%;
+    height: 120%;
   }
 .container{
     text-align: center;
@@ -33,7 +33,7 @@ body {
     grid-row-end: 13;
     border: red solid 1px;
     display: grid;
-    grid-template-rows: 1fr 260px 2fr;
+    grid-template-rows: 1fr 260px 2fr 1fr;
     background-color: #0284c7;
     grid-template-columns: 1fr 3fr;
 }
@@ -109,16 +109,32 @@ ul {
     display: grid;
 }
 .bar1{
+  display: grid;
+  justify-content: flex-start;
+  align-items: center;
+  grid-template-columns: 2fr 1fr;
+}
+.bar1-right{
   display: flex;
-
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+.magnify{
+  margin-left: 30px;
+  margin-right: 5px;
+  grid-column-start: 1;
+  grid-row-start: 1;
 }
 .searchbar{
   height: 25px;
-  width: 400px;
-  margin-top: 20px;
-  margin-left: 50px;
+  width: 500px;
+  
+  margin-left: 60px;
   border-radius: 20px;
   background-color: lightgray;
+  grid-column-start: 1;
+  grid-row-start: 1;
 }
 .container-2{
   grid-column-start: 2;
@@ -153,5 +169,16 @@ img{
   display: grid;
   justify-self: end;
   margin-top: 10px;
- margin-left: 20px;
+  margin-left: 20px;
+}
+.chess-img{
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+
+}
+.username{
+  font-weight: bold;
+  margin-left: 5px;
+  font-size: 16px;
 }
