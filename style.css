@@ -18,7 +18,7 @@ body {
   }
   
   .container {
-    height: 120%;
+    height: 130%;
   }
 .container{
     text-align: center;
@@ -141,9 +141,26 @@ ul {
   grid-row-start: 3;
   grid-row-end: 13;
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 3fr 1fr;
   background-color: lightgray;
   grid-template-rows: 50px;
+}
+.titles{
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-template-columns: 3fr 1fr;
+  justify-items: start;
+  align-items: end;
+  font-size: 20px;
+  font-weight: 500;
+}
+.card-title{
+  grid-column-start: 1;
+  margin-left: 20px;
+}
+.announcements-title{
+  grid-column-start: 2;
 }
 .rightbar{
   grid-column-start: 2;
@@ -152,8 +169,53 @@ ul {
   
 }
 .cardbox{
-  border: solid green 1px;
+  /* border: solid green 1px; */
   grid-row-start: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 20px;
+  gap: 25px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.card{
+  background-color: white;
+  display: grid;
+  border-radius: 15px;
+  grid-template-columns:  10px 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.blueside{
+  background-color: #88c7ff;
+  border-radius: 5px;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  
+}
+.card-textbox{
+  grid-column-start: 2;
+  display: grid;
+  grid-template-rows: 1fr 1fr 2fr;
+  justify-items: start;
+}
+.card-text{
+  grid-row-start: 2;
+  justify-items: center;
+  margin-left: 10px;
+  display: grid;
+  font-weight: bold;
+  font-size: 17px;
+  
+}
+.card-text2{
+  grid-row-start: 3;
+  justify-items: start;
+  text-align: start;
+  margin-left: 10px;
+  display: grid;
+  font-size: 16px;
+  font-weight: 300;
 }
 img{
   height: 25px;
