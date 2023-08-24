@@ -227,7 +227,37 @@ ul {
   padding-right: 20px;
   padding-bottom: 20px;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 20px;
+  /* gap: 10px; */
+}
+.trends{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+.trend-text-box{
+  grid-column-start: 2;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-row-start: 1;
+  margin-left: 10px;
+}
+.trend-text-head{
+  font-size: 15px;
+  justify-items: start;
+  align-items: end;
+  display: grid;
+}
+.trend-text-body{
+  display: grid;
+  align-items: start;
+  justify-items: start;
+  font-size: 14px;
+  color: rgb(122, 116, 116);
+}
+.trends img{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  align-self: center;
 }
 .cardbox{
   /* border: solid green 1px; */
